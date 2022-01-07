@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     return this.tracks.map((track) => track.id);
   }
 
-  onTalkDrop(event: CdkDragDrop<Task[]>) {
+  onTaskDrop(event: CdkDragDrop<Task[]>) {
     // In case the destination container is different from the previous container, we
     // need to transfer the given task to the target data array. This happens if
     // a task has been dropped on a different track.

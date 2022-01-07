@@ -375,7 +375,7 @@
         [id]="track.id"
         [cdkDropListData]="track.tasks"
         [cdkDropListConnectedTo]="trackIds"
-        (cdkDropListDropped)="onTalkDrop($event)"
+        (cdkDropListDropped)="onTaskDrop($event)"
       >
         <mat-card *ngFor="let task of track.tasks" cdkDrag>
           <!-- Use the mat-card-content to add the proper spacing. -->
